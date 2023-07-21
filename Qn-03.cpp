@@ -6,9 +6,7 @@ using namespace std ;
 
 class Array
 {
-    int ary[10] ;
-    
-    
+    int ary[10] ;  
     public:
         void setData(int index_no , int value)
         {
@@ -19,18 +17,16 @@ class Array
             if(index_number > 10 )
             {
                 cout<<"Index number out of bound"<<endl ;
-                return 0 ;
+                exit (0) ;
             }   
             else
                 return ary[index_number] ;
-        }
-
-        
+        }        
 } ;
 int main ()
 {
     Array a1 ;
-    
+
     //a1.setData(5,500) ;
     //cout<<a1[5] ;
 
@@ -38,8 +34,8 @@ int main ()
     for(i=0 ; i<10 ; i++)
         a1.setData(i,i*5) ;
     
-    for(i=0 ; i<10 ; i++)
-        cout<<a1[i]<<" " ;
+    //for(i=0 ; i<10 ; i++)
+        cout<<a1[11]<<" " ;
 
     return 0 ;
 }
